@@ -32,3 +32,25 @@ header.header > .navbar-nav > li > a.active {
     font-weight: 800;
     border-bottom: 1px solid #000000;
 }
+
+header.header > .cart {
+    position: relative;
+}
+
+header.header > .cart:hover {
+    cursor: pointer;
+}
+
+header.header > .cart > .count {
+    position: absolute;
+    background: #CAAFA8;
+    color: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: -10px;
+}

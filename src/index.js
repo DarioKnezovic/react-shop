@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from "axios";
 import Constants from "./constants";
+import {CartContextProvider} from "./context/Cart";
 
 axios.defaults.baseURL = Constants.API.BASE_URL;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <CartContextProvider>
+          <App />
+      </CartContextProvider>
   </React.StrictMode>
 );
 
