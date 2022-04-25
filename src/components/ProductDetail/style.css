@@ -1,0 +1,6 @@
+.product-detail {
+    height: calc(100vh - 77px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
