@@ -1,5 +1,7 @@
-import "./style.css";
 import {NavLink} from "react-router-dom";
+import {ShoppingCart} from "@mui/icons-material";
+
+import "./style.css";
 
 const Header = () => {
     return (
@@ -21,7 +23,7 @@ const Header = () => {
             </ul>
 
             <div className="cart">
-                cart
+                <ShoppingCart />
             </div>
         </header>
     )
