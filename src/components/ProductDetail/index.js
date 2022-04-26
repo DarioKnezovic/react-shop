@@ -8,7 +8,7 @@ const ProductDetail = (props) => {
     const cartCtx = useContext(CartContext);
 
     const addToCart = () => {
-        cartCtx.updateCartItems(props.product);
+        cartCtx.addItemInCart(props.product);
     }
     return (
         <div className="product-detail">

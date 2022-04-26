@@ -7,6 +7,8 @@ import CartContext from "../../context/Cart";
 
 const Header = () => {
     const cartCtx = useContext(CartContext);
+    const cartQuantity = cartCtx.items.reduce((n, {quantity}) => n + quantity, 0);
+
     return (
         <header className="header">
             <NavLink className="logo-link" to="/">
@@ -27,7 +29,7 @@ const Header = () => {
 
             <div className="cart">
                 <span className="count">
-                    {cartCtx.items.length > -1 && cartCtx.items.length}
+                    {cartQuantity}
                 </span>
                 <ShoppingBag sx={{ fontSize: 40 }} />
             </div>
